@@ -2,12 +2,9 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>BGM集一覧 - 革命スミン</title>
+  <title>BGM集 - 革命スミン</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    /* ------------------------------
-       Global Style
-    ------------------------------ */
     body {
       margin: 0;
       font-family: "Helvetica Neue", Arial, sans-serif;
@@ -18,47 +15,14 @@
       text-decoration: none;
       color: inherit;
     }
-    img {
-      max-width: 100%;
-      height: auto;
-      display: block;
-    }
-    h1, h2, h3 {
-      margin: 0;
-      padding: 0;
-    }
-    p {
-      margin: 0;
-      padding: 0;
-    }
-    /* ------------------------------
-       Header
-    ------------------------------ */
-    header {
-      background: linear-gradient(135deg, #88d3ce, #6e45e2);
-      padding: 30px 20px;
-      text-align: center;
-      color: #fff;
-    }
-    header h1 {
-      font-size: 1.8rem;
-      margin-bottom: 5px;
-    }
-    header p {
-      font-size: 1.1rem;
-      margin-top: 5px;
-    }
-    /* ------------------------------
-       Container
-    ------------------------------ */
     .container {
       max-width: 900px;
-      margin: 0 auto;
+      margin: 20px auto;
       padding: 20px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
-    /* ------------------------------
-       BGM Grid
-    ------------------------------ */
     .bgm-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -69,41 +33,27 @@
       background-color: #fff;
       border-radius: 8px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
+      padding: 15px;
+      text-align: center;
     }
     .bgm-card img {
       width: 100%;
-      display: block;
-    }
-    .bgm-content {
-      padding: 15px;
-      flex: 1;
-      display: flex;
-      flex-direction: column;
+      max-width: 200px;
+      margin-bottom: 10px;
+      border-radius: 6px;
     }
     .bgm-title {
       font-weight: bold;
-      margin-bottom: 8px;
-      font-size: 1.1rem;
-    }
-    .bgm-desc {
-      font-size: 0.9rem;
       margin-bottom: 10px;
-      color: #666;
-      line-height: 1.4;
     }
     .bgm-audio {
       margin-bottom: 10px;
     }
     .download-btn {
       display: inline-block;
-      margin-top: auto;
       padding: 8px 12px;
       background-color: #6e45e2;
       color: #fff;
-      text-align: center;
       border-radius: 4px;
       transition: 0.3s;
       font-size: 0.9rem;
@@ -111,96 +61,268 @@
     .download-btn:hover {
       opacity: 0.8;
     }
-    /* ------------------------------
-       Footer
-    ------------------------------ */
-    footer {
-      text-align: center;
-      font-size: 0.9rem;
-      color: #999;
-      margin: 30px 0;
-    }
   </style>
 </head>
 <body>
 
-  <!-- Header -->
-  <header>
-    <h1>革命スミンのBGM集</h1>
-    <p>好きな音源をダウンロードしてご利用ください</p>
-  </header>
-
-  <!-- Container -->
   <div class="container">
-    <h2>配布中のBGM一覧</h2>
+    <h1>無料BGM一覧</h1>
+    <p>好きなBGMを選んで試聴・ダウンロードしてください。</p>
+    
     <div class="bgm-grid">
+      <!-- BGMリスト -->
       <!-- BGM 1 -->
       <div class="bgm-card">
-        <img src="https://placehold.jp/250x150.png?text=BGM1" alt="BGM1 Cover">
-        <div class="bgm-content">
-          <div class="bgm-title">BGM1</div>
-          <div class="bgm-desc">このBGMはアップテンポで明るい雰囲気です。ショート動画のオープニングにぴったり！</div>
-          <div class="bgm-audio">
-            <audio controls>
-              <source src="assets/bgm1.mp3" type="audio/mpeg">
-              お使いのブラウザはオーディオ要素に対応していません。
-            </audio>
-          </div>
-          <a class="download-btn" href="assets/bgm1.mp3" download>ダウンロード</a>
+        <img src="https://lh3.googleusercontent.com/kxG624CUFplgY3_-3YH_uXne67z_Wwcpr7q1osWptv1WUdxSrJDKZ3DJA1T0LvLb-l7SDnaLVaE_k7k=w544-h544-l90-rj" alt="かけっこ Cover">
+        <div class="bgm-title">かけっこ</div>
+        <div class="bgm-audio">
+          <audio controls>
+            <source src="assets/かけっこ.mp3" type="audio/mpeg">
+            お使いのブラウザはオーディオ要素に対応していません。
+          </audio>
         </div>
+        <a class="download-btn" href="assets/かけっこ.mp3" download>ダウンロード</a>
       </div>
+
+      <!-- 他のBGMも同様に追加 -->
       <!-- BGM 2 -->
       <div class="bgm-card">
-        <img src="https://placehold.jp/250x150.png?text=BGM2" alt="BGM2 Cover">
-        <div class="bgm-content">
-          <div class="bgm-title">BGM2</div>
-          <div class="bgm-desc">落ち着いた雰囲気のBGM。背景音楽やトーク系動画にも使えます。</div>
-          <div class="bgm-audio">
-            <audio controls>
-              <source src="assets/bgm2.mp3" type="audio/mpeg">
-              お使いのブラウザはオーディオ要素に対応していません。
-            </audio>
-          </div>
-          <a class="download-btn" href="assets/bgm2.mp3" download>ダウンロード</a>
+        <img src="https://lh3.googleusercontent.com/34ZvnKWh5eL2w4Tn4O9uzG8-o0iyJHFNuA4Q6-6wlPWiNscKn-OubFMhaYihHPIt6fR3K6rSLndTnyEw=w544-h544-l90-rj" alt="またね Cover">
+        <div class="bgm-title">またね</div>
+        <div class="bgm-audio">
+          <audio controls>
+            <source src="assets/またね.mp3" type="audio/mpeg">
+            お使いのブラウザはオーディオ要素に対応していません。
+          </audio>
         </div>
+        <a class="download-btn" href="assets/またね.mp3" download>ダウンロード</a>
       </div>
+
       <!-- BGM 3 -->
       <div class="bgm-card">
-        <img src="https://placehold.jp/250x150.png?text=BGM3" alt="BGM3 Cover">
-        <div class="bgm-content">
-          <div class="bgm-title">BGM3</div>
-          <div class="bgm-desc">情熱的なロック調のBGM。エネルギッシュなシーンでの使用がおすすめ。</div>
-          <div class="bgm-audio">
-            <audio controls>
-              <source src="assets/bgm3.mp3" type="audio/mpeg">
-              お使いのブラウザはオーディオ要素に対応していません。
-            </audio>
-          </div>
-          <a class="download-btn" href="assets/bgm3.mp3" download>ダウンロード</a>
+        <img src="https://lh3.googleusercontent.com/WFDsbSxZsBSUVIZvlXeO9ecIw81dk9wbA6HFEWjYj_sd0LJZACC2rBvvJPh3DHPjhYy1f7dxJBiL1A9E7A=w544-h544-l90-rj" alt="コマ送り Cover">
+        <div class="bgm-title">コマ送り</div>
+        <div class="bgm-audio">
+          <audio controls>
+            <source src="assets/コマ送り.mp3" type="audio/mpeg">
+            お使いのブラウザはオーディオ要素に対応していません。
+          </audio>
         </div>
+        <a class="download-btn" href="assets/コマ送り.mp3" download>ダウンロード</a>
       </div>
+
       <!-- BGM 4 -->
       <div class="bgm-card">
-        <img src="https://placehold.jp/250x150.png?text=BGM4" alt="BGM4 Cover">
-        <div class="bgm-content">
-          <div class="bgm-title">BGM4</div>
-          <div class="bgm-desc">ほんのり和風テイストのBGM。和モダンな動画に最適です。</div>
-          <div class="bgm-audio">
-            <audio controls>
-              <source src="assets/bgm4.mp3" type="audio/mpeg">
-              お使いのブラウザはオーディオ要素に対応していません。
-            </audio>
-          </div>
-          <a class="download-btn" href="assets/bgm4.mp3" download>ダウンロード</a>
+        <img src="https://lh3.googleusercontent.com/4-U2DWpRtQcLIapxwjCSVu3Hy6oIR8n1PzBDgQefYmtO6ombLPNp8JKpGsE3gk5tZI1KXpbU2AXOYjX1=w544-h544-l90-rj" alt="愉快な日 Cover">
+        <div class="bgm-title">愉快な日</div>
+        <div class="bgm-audio">
+          <audio controls>
+            <source src="assets/愉快な日.mp3" type="audio/mpeg">
+            お使いのブラウザはオーディオ要素に対応していません。
+          </audio>
         </div>
+        <a class="download-btn" href="assets/愉快な日.mp3" download>ダウンロード</a>
       </div>
-    </div> <!-- /.bgm-grid -->
-  </div><!-- /.container -->
 
-  <!-- Footer -->
-  <footer>
-    &copy; 2025 革命スミン
-  </footer>
+      <!-- BGM 5 -->
+      <div class="bgm-card">
+        <img src="https://lh3.googleusercontent.com/5NQO3ezXDZ912wF7bm75MU0ZzJjfw_GZyUUI1XtFi7Dlf5TWmQEYZDMP4sUK09SZ0mfoWvjXYOucd-hj=w544-h544-l90-rj" alt="明日は明るい Cover">
+        <div class="bgm-title">明日は明るい</div>
+        <div class="bgm-audio">
+          <audio controls>
+            <source src="assets/明日は明るい.mp3" type="audio/mpeg">
+            お使いのブラウザはオーディオ要素に対応していません。
+          </audio>
+        </div>
+        <a class="download-btn" href="assets/明日は明るい.mp3" download>ダウンロード</a>
+      </div>
+
+      <!-- BGM 6 -->
+      <div class="bgm-card">
+        <img src="https://lh3.googleusercontent.com/vLPZoBPwVt3RRt57tJGFGN-uU3bf1meLYx_gGXnrvjZtsqD99-4Op9Vx9JbUO8W5UFfaRd2VUv9Trsz0=w544-h544-l90-rj" alt="全クリ Cover">
+        <div class="bgm-title">全クリ</div>
+        <div class="bgm-audio">
+          <audio controls>
+            <source src="assets/全クリ.mp3" type="audio/mpeg">
+            お使いのブラウザはオーディオ要素に対応していません。
+          </audio>
+        </div>
+        <a class="download-btn" href="assets/全クリ.mp3" download>ダウンロード</a>
+      </div>
+
+      <!-- BGM 7 -->
+      <div class="bgm-card">
+        <img src="https://lh3.googleusercontent.com/UZA0S7B3OxiVgXCX7usIW5wfEvDET9qRwgxmJxcVcbg9NBVmNxf2KNk_WZgTeCN_iWDmIhW_yjM-Igh3=w544-h544-l90-rj" alt="トリビアBGM Cover">
+        <div class="bgm-title">トリビアBGM</div>
+        <div class="bgm-audio">
+          <audio controls>
+            <source src="assets/トリビアBGM.mp3" type="audio/mpeg">
+            お使いのブラウザはオーディオ要素に対応していません。
+          </audio>
+        </div>
+        <a class="download-btn" href="assets/トリビアBGM.mp3" download>ダウンロード</a>
+      </div>
+
+      <!-- BGM 8 -->
+      <div class="bgm-card">
+        <img src="https://lh3.googleusercontent.com/dbQbTbZhbGqSoxOhrjVtuGkB_1w1U5bGDIeCgs0AO3zFatJUCXHkiQE55wE1HBWkApNB5-OTLwQppYB-=w544-h544-l90-rj" alt="秘密の事件簿 Cover">
+        <div class="bgm-title">秘密の事件簿</div>
+        <div class="bgm-audio">
+          <audio controls>
+            <source src="assets/秘密の事件簿.mp3" type="audio/mpeg">
+            お使いのブラウザはオーディオ要素に対応していません。
+          </audio>
+        </div>
+        <a class="download-btn" href="assets/秘密の事件簿.mp3" download>ダウンロード</a>
+      </div>
+
+<!-- BGM 9 -->
+<div class="bgm-card">
+  <img src="https://lh3.googleusercontent.com/9w--WTwkcOBSIzD1HBQnFhoQHkyIMyW4AkRifG2GBoqrNzMZEZ2MsuBhZYuv8HcEGHyHtM8dUPzXn2k=w544-h544-l90-rj" alt="bun Cover">
+  <div class="bgm-title">bun</div>
+  <div class="bgm-audio">
+    <audio controls>
+      <source src="assets/bun.mp3" type="audio/mpeg">
+      お使いのブラウザはオーディオ要素に対応していません。
+    </audio>
+  </div>
+  <a class="download-btn" href="assets/bun.mp3" download>ダウンロード</a>
+</div>
+
+<!-- BGM 10 -->
+<div class="bgm-card">
+  <img src="https://lh3.googleusercontent.com/JgXYsZ3AxrUGhYHvu9I10-A0FjlQFPAwNw6IH-CNs5BySKmwJ53fPEqFbm4gpgGLPS_dX6nYHljKM15M=w544-h544-l90-rj" alt="おてんば娘 Cover">
+  <div class="bgm-title">おてんば娘</div>
+  <div class="bgm-audio">
+    <audio controls>
+      <source src="assets/おてんば娘.mp3" type="audio/mpeg">
+      お使いのブラウザはオーディオ要素に対応していません。
+    </audio>
+  </div>
+  <a class="download-btn" href="assets/おてんば娘.mp3" download>ダウンロード</a>
+</div>
+
+<!-- BGM 11 -->
+<div class="bgm-card">
+  <img src="https://lh3.googleusercontent.com/JgXYsZ3AxrUGhYHvu9I10-A0FjlQFPAwNw6IH-CNs5BySKmwJ53fPEqFbm4gpgGLPS_dX6nYHljKM15M=w544-h544-l90-rj" alt="リプレイ再生 Cover">
+  <div class="bgm-title">リプレイ再生</div>
+  <div class="bgm-audio">
+    <audio controls>
+      <source src="assets/リプレイ再生.mp3" type="audio/mpeg">
+      お使いのブラウザはオーディオ要素に対応していません。
+    </audio>
+  </div>
+  <a class="download-btn" href="assets/リプレイ再生.mp3" download>ダウンロード</a>
+</div>
+
+<!-- BGM 12 -->
+<div class="bgm-card">
+  <img src="https://lh3.googleusercontent.com/JgXYsZ3AxrUGhYHvu9I10-A0FjlQFPAwNw6IH-CNs5BySKmwJ53fPEqFbm4gpgGLPS_dX6nYHljKM15M=w544-h544-l90-rj" alt="一目惚れ Cover">
+  <div class="bgm-title">一目惚れ</div>
+  <div class="bgm-audio">
+    <audio controls>
+      <source src="assets/一目惚れ.mp3" type="audio/mpeg">
+      お使いのブラウザはオーディオ要素に対応していません。
+    </audio>
+  </div>
+  <a class="download-btn" href="assets/一目惚れ.mp3" download>ダウンロード</a>
+</div>
+
+<!-- BGM 13 -->
+<div class="bgm-card">
+  <img src="https://lh3.googleusercontent.com/JgXYsZ3AxrUGhYHvu9I10-A0FjlQFPAwNw6IH-CNs5BySKmwJ53fPEqFbm4gpgGLPS_dX6nYHljKM15M=w544-h544-l90-rj" alt="別れの挨拶は無しか？ Cover">
+  <div class="bgm-title">別れの挨拶は無しか？</div>
+  <div class="bgm-audio">
+    <audio controls>
+      <source src="assets/別れの挨拶は無しか？.mp3" type="audio/mpeg">
+      お使いのブラウザはオーディオ要素に対応していません。
+    </audio>
+  </div>
+  <a class="download-btn" href="assets/別れの挨拶は無しか？.mp3" download>ダウンロード</a>
+</div>
+
+<!-- BGM 14 -->
+<div class="bgm-card">
+  <img src="https://lh3.googleusercontent.com/JgXYsZ3AxrUGhYHvu9I10-A0FjlQFPAwNw6IH-CNs5BySKmwJ53fPEqFbm4gpgGLPS_dX6nYHljKM15M=w544-h544-l90-rj" alt="宝探しに出かけようぜ Cover">
+  <div class="bgm-title">宝探しに出かけようぜ</div>
+  <div class="bgm-audio">
+    <audio controls>
+      <source src="assets/宝探しに出かけようぜ.mp3" type="audio/mpeg">
+      お使いのブラウザはオーディオ要素に対応していません。
+    </audio>
+  </div>
+  <a class="download-btn" href="assets/宝探しに出かけようぜ.mp3" download>ダウンロード</a>
+</div>
+
+      <!-- BGM 15 -->
+      <div class="bgm-card">
+        <img src="https://lh3.googleusercontent.com/JgXYsZ3AxrUGhYHvu9I10-A0FjlQFPAwNw6IH-CNs5BySKmwJ53fPEqFbm4gpgGLPS_dX6nYHljKM15M=w544-h544-l90-rj" alt="愉快な仲間達 Cover">
+        <div class="bgm-title">愉快な仲間達</div>
+        <div class="bgm-audio">
+          <audio controls>
+            <source src="assets/愉快な仲間達.mp3" type="audio/mpeg">
+            お使いのブラウザはオーディオ要素に対応していません。
+          </audio>
+        </div>
+        <a class="download-btn" href="assets/愉快な仲間達.mp3" download>ダウンロード</a>
+      </div>
+      
+      <!-- BGM 16 -->
+      <div class="bgm-card">
+        <img src="https://lh3.googleusercontent.com/JgXYsZ3AxrUGhYHvu9I10-A0FjlQFPAwNw6IH-CNs5BySKmwJ53fPEqFbm4gpgGLPS_dX6nYHljKM15M=w544-h544-l90-rj" alt="旅へ出発 Cover">
+        <div class="bgm-title">旅へ出発</div>
+        <div class="bgm-audio">
+          <audio controls>
+            <source src="assets/旅へ出発.mp3" type="audio/mpeg">
+            お使いのブラウザはオーディオ要素に対応していません。
+          </audio>
+        </div>
+        <a class="download-btn" href="assets/旅へ出発.mp3" download>ダウンロード</a>
+      </div>
+      
+      <!-- BGM 17 -->
+      <div class="bgm-card">
+        <img src="https://lh3.googleusercontent.com/JgXYsZ3AxrUGhYHvu9I10-A0FjlQFPAwNw6IH-CNs5BySKmwJ53fPEqFbm4gpgGLPS_dX6nYHljKM15M=w544-h544-l90-rj" alt="明日はお休み Cover">
+        <div class="bgm-title">明日はお休み</div>
+        <div class="bgm-audio">
+          <audio controls>
+            <source src="assets/明日はお休み.mp3" type="audio/mpeg">
+            お使いのブラウザはオーディオ要素に対応していません。
+          </audio>
+        </div>
+        <a class="download-btn" href="assets/明日はお休み.mp3" download>ダウンロード</a>
+      </div>
+      
+      <!-- BGM 18 -->
+      <div class="bgm-card">
+        <img src="https://lh3.googleusercontent.com/JgXYsZ3AxrUGhYHvu9I10-A0FjlQFPAwNw6IH-CNs5BySKmwJ53fPEqFbm4gpgGLPS_dX6nYHljKM15M=w544-h544-l90-rj" alt="突然のシンキングタイム Cover">
+        <div class="bgm-title">突然のシンキングタイム</div>
+        <div class="bgm-audio">
+          <audio controls>
+            <source src="assets/突然のシンキングタイム.mp3" type="audio/mpeg">
+            お使いのブラウザはオーディオ要素に対応していません。
+          </audio>
+        </div>
+        <a class="download-btn" href="assets/突然のシンキングタイム.mp3" download>ダウンロード</a>
+      </div>
+      
+      <!-- BGM 19 -->
+      <div class="bgm-card">
+        <img src="https://lh3.googleusercontent.com/JgXYsZ3AxrUGhYHvu9I10-A0FjlQFPAwNw6IH-CNs5BySKmwJ53fPEqFbm4gpgGLPS_dX6nYHljKM15M=w544-h544-l90-rj" alt="頭が弾けました Cover">
+        <div class="bgm-title">頭が弾けました</div>
+        <div class="bgm-audio">
+          <audio controls>
+            <source src="assets/頭が弾けました.mp3" type="audio/mpeg">
+            お使いのブラウザはオーディオ要素に対応していません。
+          </audio>
+        </div>
+        <a class="download-btn" href="assets/頭が弾けました.mp3" download>ダウンロード</a>
+      </div>
+   
+      <!-- 他のBGMも同様にここに追加（省略） -->
+      
+    </div> <!-- /.bgm-grid -->
+  </div> <!-- /.container -->
 
 </body>
 </html>
