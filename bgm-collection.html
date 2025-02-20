@@ -5,6 +5,17 @@
   <title>BGM集 - 革命スミン</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
+    header {
+  background: #181818;
+  padding: 10px 10px;
+  text-align: center;
+  color: #ffea06; /* これが h1 に適用されるようにする */
+    }
+    header h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: inherit; /* `header` の color を継承する */
+    }
     body {
       margin: 0;
       font-family: "Helvetica Neue", Arial, sans-serif;
@@ -93,8 +104,10 @@
   </style>
 </head>
 <body>
-  <div class="container">
+    <header>
     <h1>無料BGM一覧</h1>
+  </header>
+  <div class="container">
     <p>好きなBGMを選んで試聴・ダウンロードしてください。</p>
     <div class="bgm-list">
       
