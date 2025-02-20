@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  background-color: #111111;
+  color: #111111;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.bgm-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* 1列レイアウト */
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* カードを横並びにする */
+.bgm-card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 15px;
+}
+
+/* ジャケ写 (左) */
+.bgm-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+/* タイトル全体 */
+.bgm-title {
+  font-weight: bold;
+  min-width: 120px;
+  display: flex;
+  flex-direction: column; /* タイトルとサブタイトルを縦並び */
+}
+
+/* サブタイトル（補足テキスト） */
+.bgm-subtitle {
+  font-size: 0.85rem;
+  color: #555; /* 少し薄めの色で控えめに */
+  margin-top: 2px; /* タイトルとの間隔 */
+}
+
+/* 試聴エリア */
+.bgm-audio {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+/* ダウンロードボタン (右) */
+.download-btn {
+  display: inline-block;
+  padding: 6px 12px;
+  background-color: #6e45e2;
+  color: #fff;
+  border-radius: 4px;
+  transition: 0.3s;
+  font-size: 0.85rem;
+  text-align: center;
+  white-space: nowrap; /* 折り返し防止 */
+}
+
+.download-btn:hover {
+  opacity: 0.8;
+}
