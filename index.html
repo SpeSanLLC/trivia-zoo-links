@@ -8,17 +8,18 @@
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            background-color: #111111;
+            background-color: #181818; /* 背景色をダークグレーに */
             padding: 50px;
+            color: #ECECEC; /* 文字色を明るいグレーに */
         }
         .container {
             max-width: 98%;
             width: 500px;
             margin: auto;
-            background: white;
+            background: #1f1f1f; /* コンテナの背景色をダークグレーに */
             padding: 20px;
             border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
             box-sizing: border-box;
         }
         @media screen and (max-width: 768px) {
@@ -38,10 +39,11 @@
         }
         .profile h2 {
             margin: 10px 0 5px;
+            color: #FFFFFF; /* タイトルを白に */
         }
         .profile p {
-            color: #555;
-            font-size: 16px;
+            color: #CCCCCC; /* サブタイトルを明るいグレーに */
+            font-size: 14px;
         }
         .link-btn {
             display: block;
@@ -57,13 +59,29 @@
             box-sizing: border-box;
         }
         .youtube { background-color: #FF0000; }
-        .tiktok { background-color: #000000; }
+        .tiktok { background: linear-gradient(90deg, #000000 0%, #EE1D52 50%, #000000 100%); }
         .instagram { background: linear-gradient(45deg, #F58529, #DD2A7B, #8134AF); }
         .facebook { background-color: #1877F2; }
         .line { background-color: #06C755; }
-        .bgm { background-color: #000000; color: #ffea06; }
+        .bgm { background-color: #ffea06; color: #2a2a2a; font-weight: bold; } /* BGMボタンを黄色にし、文字色をBGMカードと同じダークグレーに */
         .link-btn:hover {
             opacity: 0.8;
+        }
+        .bgm-description {
+            font-size: 13px; /* サブタイトルより少し小さめ */
+            margin-top: 10px;
+            color: #CCCCCC;
+        }
+        .bgm-description strong {
+            color: #ffea06; /* 強調部分を黄色に */
+        }
+        .bgm-description a {
+            color: #ffea06; /* テキストリンクを黄色に */
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .bgm-description a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -74,13 +92,13 @@
             <h2>トリビア動物園</h2>
             <p>動物の秘密🤫暴露します🔥</p>
         </div>
+        <a class="link-btn bgm" href="lp.html" target="_blank"><strong>使っている無料BGM</strong></a>
+        <p class="bgm-description">※無料BGMは誰でも自由に使えます。詳細は上記ボタンをクリック。 <a href="bgm-collection.html">無料BGMのDLはこちら</a></p>
         <a class="link-btn youtube" href="https://www.youtube.com/@trivia_zoo" target="_blank"><strong>YouTubeはこちら</strong></a>
         <a class="link-btn tiktok" href="https://www.tiktok.com/@respectpets" target="_blank"><strong>TikTokはこちら</strong></a>
         <a class="link-btn instagram" href="https://www.instagram.com/trivia_zoo" target="_blank"><strong>Instagramはこちら</strong></a>
         <a class="link-btn facebook" href="https://www.facebook.com/triviazoo666/" target="_blank"><strong>Facebookはこちら</strong></a>
         <a class="link-btn line" href="https://line.me/R/ti/p/@080qovne" target="_blank"><strong>LINEはこちら</strong></a>
-        <a class="link-btn bgm" href="lp.html" target="_blank"><strong>使っている無料BGM</strong></a>
-        <a class="link-btn bgm" href="bgm-collection.html" target="_blank"><strong>BGMのDLはこちら</strong></a>
     </div>
 </body>
 </html>
