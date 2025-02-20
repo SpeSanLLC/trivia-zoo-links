@@ -21,12 +21,12 @@ a {
 
 .bgm-grid {
   display: grid;
-  grid-template-columns: 1fr; /* 1列レイアウト */
+  grid-template-columns: 1fr;
   gap: 15px;
   margin-top: 20px;
 }
 
-/* カードを横並びにする */
+/* カードを横並びに */
 .bgm-card {
   display: flex;
   align-items: center;
@@ -37,7 +37,7 @@ a {
   padding: 15px;
 }
 
-/* ジャケ写 (左) */
+/* ジャケ写 */
 .bgm-card img {
   width: 100px;
   height: 100px;
@@ -45,19 +45,19 @@ a {
   border-radius: 6px;
 }
 
-/* タイトル全体 */
+/* タイトル & サブタイトル */
 .bgm-title {
   font-weight: bold;
-  min-width: 120px;
+  min-width: 140px; /* タイトルの最小幅 */
   display: flex;
-  flex-direction: column; /* タイトルとサブタイトルを縦並び */
+  flex-direction: column;
 }
 
-/* サブタイトル（補足テキスト） */
+/* サブタイトル */
 .bgm-subtitle {
   font-size: 0.85rem;
-  color: #555; /* 少し薄めの色で控えめに */
-  margin-top: 2px; /* タイトルとの間隔 */
+  color: #555;
+  margin-top: 2px;
 }
 
 /* 試聴エリア */
@@ -67,7 +67,7 @@ a {
   align-items: center;
 }
 
-/* ダウンロードボタン (右) */
+/* ダウンロードボタン */
 .download-btn {
   display: inline-block;
   padding: 6px 12px;
@@ -77,7 +77,7 @@ a {
   transition: 0.3s;
   font-size: 0.85rem;
   text-align: center;
-  white-space: nowrap; /* 折り返し防止 */
+  white-space: nowrap;
 }
 
 .download-btn:hover {
