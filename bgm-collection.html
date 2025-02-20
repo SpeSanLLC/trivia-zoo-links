@@ -8,8 +8,8 @@
     body {
       margin: 0;
       font-family: "Helvetica Neue", Arial, sans-serif;
-      background-color: #f1f1f1;
-      color: #333;
+      background-color: #181818; /* 背景色をダークグレーに */
+      color: #ECECEC; /* 文字色を明るいグレーに */
     }
     a {
       text-decoration: none;
@@ -23,10 +23,13 @@
     .container {
       max-width: 800px;
       margin: 20px auto;
-      background-color: #fff;
+      background-color: #1f1f1f; /* コンテナの背景色をダークグレーに */
       border-radius: 8px;
       padding: 20px 30px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.5); /* シャドウを濃く */
+    }
+    h1 {
+      color: #ffea06; /* 無料BGM一覧のテキストカラーを黄色に */
     }
     .bgm-list {
       display: grid;
@@ -35,13 +38,13 @@
       margin: 20px 0;
     }
     .bgm-item {
-      border: 1px solid #ddd;
+      border: 1px solid #333; /* ボーダー色を濃いグレーに */
       border-radius: 6px;
       padding: 10px;
       display: flex;
       flex-wrap: wrap;
       align-items: flex-start;
-      background-color: #fafafa;
+      background-color: #2a2a2a; /* アイテムの背景色をダークグレーに */
     }
     .bgm-cover {
       flex: 0 0 120px;
@@ -55,6 +58,11 @@
     .bgm-title {
       font-weight: bold;
       margin-bottom: 8px;
+      color: #FFFFFF; /* 曲のタイトルを白に */
+    }
+    .bgm-subtitle {
+      margin-bottom: 8px;
+      color: #CCCCCC; /* サブタイトルの色を明るいグレーに */
     }
     .bgm-audio {
       margin: 10px 0;
@@ -62,15 +70,16 @@
     .bgm-btn {
       display: inline-block;
       padding: 8px 16px;
-      background-color: #6e45e2;
-      color: #fff;
+      background-color: #ffea06; /* ボタンの背景色を黄色に */
+      color: #2a2a2a; /* ボタンの文字色を黒に */
       border-radius: 4px;
       margin-top: 8px;
       transition: 0.3s;
       font-size: 0.9rem;
+      font-weight: bold; /* 太文字にする */
     }
     .bgm-btn:hover {
-      opacity: 0.8;
+      background-color: #d4c405; /* ホバー時のボタン色を少し暗い黄色に */
     }
     @media screen and (max-width: 600px) {
       .bgm-item {
