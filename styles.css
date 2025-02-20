@@ -1,15 +1,12 @@
+/* 全体の背景とフォント */
 body {
   margin: 0;
   font-family: "Helvetica Neue", Arial, sans-serif;
-  background-color: #111111;
-  color: #ffffff;
+  background-color: #f8f9fa;
+  color: #333;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
+/* コンテナ */
 .container {
   max-width: 900px;
   margin: 20px auto;
@@ -17,17 +14,9 @@ a {
   background: white;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  color: #111111;
 }
 
-.bgm-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 15px;
-  margin-top: 20px;
-}
-
-/* PC用 横並びレイアウト */
+/* BGMカード */
 .bgm-card {
   display: flex;
   align-items: center;
@@ -39,6 +28,7 @@ a {
   flex-wrap: wrap;
 }
 
+/* 画像 */
 .bgm-card img {
   width: 100px;
   height: 100px;
@@ -46,10 +36,11 @@ a {
   border-radius: 6px;
 }
 
-.bgm-content {
-  flex: 1;
+/* タイトルとサブタイトルのスタイル */
+.bgm-text {
   display: flex;
   flex-direction: column;
+  flex: 1;
 }
 
 .bgm-title {
@@ -63,16 +54,35 @@ a {
   margin-top: 2px;
 }
 
+/* 試聴エリア */
 .bgm-audio {
   margin-top: 10px;
+  width: 100%;
 }
 
-/* ✅ スマホ版 (画面幅 600px 以下) */
+/* ダウンロードボタン */
+.download-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #0056b3;
+}
+
+/* スマホ版 (600px以下) */
 @media (max-width: 600px) {
   .bgm-card {
-    flex-direction: column; /* 縦並びに */
-    align-items: center; /* 中央配置 */
-    text-align: center; /* タイトルも中央揃え */
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 
   .bgm-card img {
@@ -80,7 +90,7 @@ a {
     height: 120px;
   }
 
-  .bgm-content {
+  .bgm-text {
     width: 100%;
   }
 
